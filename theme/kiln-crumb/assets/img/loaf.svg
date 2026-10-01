@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" width="560" height="460">
+  <!-- backdrop disc -->
+  <circle cx="290" cy="235" r="205" fill="#F2E6D3"/>
+  <circle cx="290" cy="235" r="205" fill="none" stroke="#D9C8B0" stroke-width="2" stroke-dasharray="3 9"/>
+  <!-- steam -->
+  <g fill="none" stroke="#8C3B14" stroke-width="5" stroke-linecap="round" opacity=".55">
+    <path d="M232 118c-14-18 14-30 0-50s12-30 4-44"/>
+    <path d="M290 104c-14-18 14-30 0-50s12-30 4-44"/>
+    <path d="M348 118c-14-18 14-30 0-50s12-30 4-44"/>
+  </g>
+  <!-- board -->
+  <rect x="78" y="336" width="424" height="34" rx="17" fill="#4B5A41"/>
+  <rect x="470" y="344" width="62" height="18" rx="9" fill="#4B5A41"/>
+  <circle cx="518" cy="353" r="4" fill="#FBF5EC"/>
+  <!-- loaf body -->
+  <path d="M112 330c-6-92 70-176 178-176s190 84 180 176c-2 16-14 22-30 22H142c-16 0-29-6-30-22z" fill="#B5652E"/>
+  <path d="M112 330c-6-92 70-176 178-176s190 84 180 176c-2 16-14 22-30 22H142c-16 0-29-6-30-22z" fill="none" stroke="#6E2C0C" stroke-width="4"/>
+  <!-- crust highlight -->
+  <path d="M150 262c20-52 72-86 140-88" fill="none" stroke="#F0C96A" stroke-width="10" stroke-linecap="round" opacity=".55"/>
+  <!-- ear / scoring -->
+  <path d="M188 214c52-26 128-34 190 4" fill="none" stroke="#F2E6D3" stroke-width="14" stroke-linecap="round"/>
+  <path d="M188 214c52-26 128-34 190 4" fill="none" stroke="#6E2C0C" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+  <!-- flour dusting -->
+  <g fill="#FBF5EC" opacity=".85">
+    <circle cx="170" cy="292" r="3"/><circle cx="205" cy="310" r="2.5"/><circle cx="240" cy="286" r="3"/>
+    <circle cx="332" cy="300" r="2.5"/><circle cx="368" cy="282" r="3"/><circle cx="402" cy="306" r="2.5"/>
+    <circle cx="286" cy="318" r="2"/><circle cx="430" cy="276" r="2"/><circle cx="150" cy="318" r="2"/>
+  </g>
+  <!-- wheat sprig -->
+  <g fill="#F0C96A" stroke="#8C3B14" stroke-width="2.5">
+    <path d="M444 150l40-58" fill="none"/>
+    <ellipse cx="474" cy="108" rx="7" ry="14" transform="rotate(35 474 108)"/>
+    <ellipse cx="462" cy="126" rx="7" ry="14" transform="rotate(35 462 126)"/>
+    <ellipse cx="489" cy="118" rx="7" ry="14" transform="rotate(-35 489 118)"/>
+    <ellipse cx="477" cy="136" rx="7" ry="14" transform="rotate(-35 477 136)"/>
+    <ellipse cx="486" cy="88" rx="6" ry="13" transform="rotate(35 486 88)"/>
+  </g>
+</svg>

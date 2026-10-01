@@ -1,0 +1,134 @@
+/*
+Theme Name: Kiln & Crumb
+Theme URI: https://github.com/Ibrahem-al/kiln-crumb
+Author: Ibrahem Alkurdi
+Author URI: https://github.com/Ibrahem-al
+Description: A fast, accessible block theme for a neighborhood bakery (fictional concept client). Design tokens live in theme.json, business facts live in one PHP file, and every section is a block pattern the client can edit in the Site Editor.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kiln-crumb
+Tags: block-theme, full-site-editing, one-column, custom-colors, accessibility-ready
+*/
+
+/*
+ * Nearly all styling lives in theme.json. This file holds only the few rules
+ * theme.json cannot express yet.
+ */
+
+/* Visible, high-contrast focus ring for every interactive element. */
+:where(a, button, summary, input, select, textarea, [tabindex]):focus-visible {
+	outline: 3px solid var(--wp--preset--color--crust);
+	outline-offset: 3px;
+	border-radius: 2px;
+}
+
+/* Keep anchor targets clear of the sticky header. */
+html {
+	scroll-padding-top: 5.5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+/* Sticky header with a hairline that reads in both states. */
+.kc-header {
+	position: sticky;
+	top: 0;
+	z-index: 20;
+	border-bottom: 1px solid var(--wp--preset--color--line);
+}
+
+/* Tap targets: stand-alone links get at least 24px of height (WCAG 2.5.8).
+   Found by qa/audit.mjs: the site title and contact links were 19-20px tall. */
+.wp-block-site-title a,
+.kc-contact a {
+	display: inline-block;
+	padding-block: 0.3rem;
+}
+
+/* Menu board rows: name ........ price */
+.kc-menu-item {
+	border-bottom: 1px dashed var(--wp--preset--color--line);
+	padding-block: var(--wp--preset--spacing--30);
+}
+
+.kc-menu-item .kc-price {
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+/* Hours table: readable at 320px, no horizontal scroll. */
+.kc-hours table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+/* Override core's boxed table style (wp-block-styles) with simple row rules. */
+.wp-block-table.kc-hours th,
+.wp-block-table.kc-hours td {
+	text-align: left;
+	padding: 0.55rem 0;
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--line);
+	font-weight: 400;
+}
+
+.wp-block-table.kc-hours td:last-child {
+	text-align: right;
+	font-variant-numeric: tabular-nums;
+}
+
+/* FAQ disclosure marker. */
+.kc-faq details {
+	border-bottom: 1px solid var(--wp--preset--color--line);
+	padding-block: var(--wp--preset--spacing--30);
+}
+
+.kc-faq summary {
+	cursor: pointer;
+	font-family: var(--wp--preset--font-family--display);
+	font-size: var(--wp--preset--font-size--large);
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	min-height: 44px;
+	align-items: center;
+}
+
+.kc-faq summary::-webkit-details-marker {
+	display: none;
+}
+
+.kc-faq summary::after {
+	content: "+";
+	font-family: var(--wp--preset--font-family--body);
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 1;
+	color: var(--wp--preset--color--crust);
+	flex-shrink: 0;
+}
+
+.kc-faq details[open] summary::after {
+	content: "\2212";
+}
+
+/* Demo notice: this is a concept site, so say so on every page. */
+.kc-demo-note {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+/* Illustrations scale with their column and never overflow. */
+.kc-illustration svg {
+	display: block;
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420">
+  <rect x="0" y="0" width="520" height="420" rx="28" fill="#4B5A41"/>
+  <!-- brick arch oven -->
+  <path d="M90 360V230c0-94 76-170 170-170s170 76 170 170v130z" fill="#8C3B14"/>
+  <g fill="none" stroke="#6E2C0C" stroke-width="3" opacity=".7">
+    <path d="M90 300h340M90 250h340M100 200h320M126 150h268M170 108h180"/>
+    <path d="M150 300v60M230 300v60M310 300v60M390 300v60M190 250v50M270 250v50M350 250v50M150 200v50M230 200v50M310 200v50M380 200v50M200 150v50M280 150v50M350 150v50M240 108v42M300 108v42"/>
+  </g>
+  <!-- mouth with glow -->
+  <path d="M170 360v-78c0-50 40-90 90-90s90 40 90 90v78z" fill="#2A1F18"/>
+  <path d="M190 360v-70c0-39 31-70 70-70s70 31 70 70v70z" fill="#F0C96A" opacity=".35"/>
+  <path d="M212 360v-58c0-27 21-48 48-48s48 21 48 48v58z" fill="#F0C96A" opacity=".55"/>
+  <!-- loaves inside -->
+  <ellipse cx="236" cy="346" rx="26" ry="14" fill="#B5652E"/>
+  <ellipse cx="286" cy="348" rx="24" ry="12" fill="#B5652E"/>
+  <!-- hearth -->
+  <rect x="60" y="358" width="400" height="22" rx="6" fill="#F2E6D3"/>
+  <!-- peel -->
+  <path d="M400 380l72-150" stroke="#F2E6D3" stroke-width="8" stroke-linecap="round"/>
+  <rect x="442" y="196" width="46" height="46" rx="10" transform="rotate(25 465 219)" fill="#F2E6D3"/>
+</svg>

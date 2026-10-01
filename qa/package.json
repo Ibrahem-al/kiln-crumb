@@ -1,0 +1,17 @@
+{
+  "name": "kiln-crumb-qa",
+  "private": true,
+  "type": "module",
+  "description": "Pre-launch QA for the Kiln & Crumb theme: accessibility, responsive layout, SEO tags and Lighthouse.",
+  "scripts": {
+    "audit": "node audit.mjs",
+    "lighthouse": "node lighthouse.mjs",
+    "blocks": "node validate-blocks.mjs",
+    "qa": "node validate-blocks.mjs && node audit.mjs && node lighthouse.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "lighthouse": "^13.0.0",
+    "playwright": "^1.55.0"
+  }
+}
