@@ -31,7 +31,9 @@ for (const path of PAGES) {
     for (const [k, min] of Object.entries(BUDGET)) if (scores[k] < min) failed = true;
   }
 }
-await chrome.kill();
+// On Windows, chrome-launcher can fail to delete its temp profile (EPERM) while Chrome
+// still holds it; the scores are already collected, so do not let cleanup crash the run.
+try { await chrome.kill(); } catch (e) { console.warn(`Chrome cleanup warning: ${e.message}`); }
 
 console.table(rows);
 fs.writeFileSync('lighthouse-report.json', JSON.stringify(rows, null, 2));

@@ -3,3 +3,5 @@ qa/shots/
 qa/audit-report.json
 qa/lighthouse-report.json
 .DS_Store
+
+.vercel
