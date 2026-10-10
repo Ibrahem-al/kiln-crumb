@@ -5,3 +5,6 @@ qa/lighthouse-report.json
 .DS_Store
 
 .vercel
+
+# Git Bash / Cygwin crash dumps (Windows)
+*.stackdump
